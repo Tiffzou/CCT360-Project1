@@ -170,9 +170,9 @@ nav {
 }
 
 .detail-hero .lead-text {
+  width: 100%;
   max-width: 650px;
   margin-top: auto;
-  white-space: nowrap;
   line-height: 1.7;
   font-size: 16px;
 }
