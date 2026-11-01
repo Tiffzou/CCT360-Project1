@@ -271,6 +271,7 @@ nav {
   text-align: center;
   padding: 12px 8px;
   margin-top: auto;
+  margin-bottom: -5px;
 }
 
 .back-button:hover {
