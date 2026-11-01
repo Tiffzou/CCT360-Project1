@@ -1,0 +1,385 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, serif;
+  background: #f8f7f4;
+  color: black;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Header and Footer */
+.site-header, .site-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background: #E9E7E3;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+/* Homepage */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 20px 2%;
+}
+
+.hero-image {
+  background: url("../images/Cancun.jpg") center/cover;
+  height: 400px;
+  padding: 45px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-image h1 {
+  font-size: 55px;
+}
+
+.hero-image p {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.hero-image a {
+  margin-top: auto;
+  background: #f8f7f4;
+  color: black;
+  padding: 8px 16px;
+  width: fit-content;
+}
+
+.about {
+  background: #330c10;
+  color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.about h2 {
+  font-size: 38px;
+}
+
+.about p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.about-info {
+  border-top: 1px solid #80565a;
+  border-bottom: 1px solid #80565a;
+  padding: 12px 0;
+}
+
+.about-info p {
+  margin: 6px 0;
+}
+
+.about h3 {
+  font-size: 15px;
+  color: #d6adb0;
+}
+
+.about a {
+  font-size: 15px;
+}
+
+.cards-gallery {
+  padding: 20px 6%;
+}
+
+.cards-gallery h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin-top: 8px;
+}
+
+.card p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.card a,
+.card span {
+  margin-top: auto;
+  padding-top: 12px;
+  text-align: left;
+  font-size: 14px;
+}
+
+/* Detail Page */
+.detail-hero {
+  background:
+    linear-gradient(to right, rgba(0,0,0,0.35), transparent),
+    url("../images/Banff.jpg") center/cover;
+  height: 400px;
+  margin: 20px 2%;
+  padding: 35px 45px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-hero h1 {
+  font-size: 55px;
+  margin-top: 15px;
+}
+
+.detail-hero h2 {
+  font-size: 26px;
+}
+
+.detail-hero p {
+  margin-top: 8px;
+}
+
+.detail-hero .lead-text {
+  max-width: 650px;
+  margin-top: auto;
+  white-space: nowrap;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+  margin: 20px 5%;
+}
+
+.story section {
+  margin-bottom: 20px;
+}
+
+.story section:last-child {
+  margin-bottom: 0;
+}
+
+.story h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.story p {
+  font-size: 15px;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.lake-gallery {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(2, 110px);
+  gap: 8px;
+}
+
+.lake-gallery img,
+.moments-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lake-main {
+  grid-row: span 2;
+}
+
+.moments-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.moments-gallery img {
+  height: 155px;
+}
+
+.project-detail {
+  background: #e9e7e3;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-detail h2 {
+  font-size: 27px;
+  margin-bottom: 12px;
+}
+
+.project-detail h4 {
+  font-size: 15px;
+  margin-top: 12px;
+}
+
+.project-detail p {
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.project-detail h3 {
+  font-size: 18px;
+  margin-top: 25px;
+  margin-bottom: 12px;
+}
+
+.project-detail ul {
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.back-button {
+  background: #330c10;
+  color: white;
+  text-align: center;
+  padding: 12px 8px;
+  margin-top: auto;
+}
+
+.back-button:hover {
+  background: #592026;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .site-header, .site-footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav {
+    gap: 20px;
+    font-size: 13px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+
+  .hero-image {
+    height: 300px;
+    padding: 20px;
+  }
+
+  .hero-image h1 {
+    font-size: 35px;
+  }
+
+  .hero-image p {
+    font-size: 15px;
+  }
+
+  .about {
+    padding: 20px;
+  }
+
+  .about h2 {
+    font-size: 30px;
+  }
+
+  .about p {
+    font-size: 15px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .card img {
+    height: 180px;
+  }
+
+  .detail-hero {
+    height: auto;
+    min-height: 320px;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .detail-hero h1 {
+    font-size: 36px;
+  }
+
+  .detail-hero h2 {
+    font-size: 19px;
+  }
+
+  .detail-hero p {
+    font-size: 13px;
+  }
+
+  .detail-hero .lead-text {
+    margin-top: auto;
+    white-space: normal;
+    font-size: 13px;
+  }
+  
+  .detail-grid {
+    grid-template-columns: 1fr;
+    margin: 20px;
+  }
+
+  .story h2 {
+    font-size: 24px;
+  }
+
+  .lake-gallery {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .lake-gallery img,
+  .moments-gallery img {
+    height: 180px;
+  }
+
+  .lake-main {
+    grid-row: auto;
+  }
+
+  .moments-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .back-button {
+    margin-top: 25px;
+  }
+}
