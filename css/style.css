@@ -20,7 +20,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 5%;
+  padding: 20px 2%;
   background: #E9E7E3;
   font-family: Arial, sans-serif;
 }
@@ -250,7 +250,7 @@ nav {
 
 .project-detail p {
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 1.3;
 }
 
 .project-detail h3 {
@@ -262,7 +262,7 @@ nav {
 .project-detail ul {
   padding-left: 20px;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.3;
 }
 
 .back-button {
